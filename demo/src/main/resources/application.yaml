@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/myBank
+    username: postgres
+    password: my name Is
+
+  jpa:
+    hibernate:
+
+#      create the table schema when application starts and drops when ends
+#      good for development and testing purpose when you don't want your schema to retain
+      ddl-auto: create-drop
+
+#      if true then it shows the queries created by the jpa on the console i.e., logs the created sql queries
+    show-sql: true
+
